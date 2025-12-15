@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Nona Asya</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Quicksand',sans-serif;
+background:linear-gradient(to bottom, #b3e5fc, #e1f5fe);
+color:#0288d1;
+overflow:hidden;
+min-height:100vh;
+position:relative;
+}
+body::before {
+content:"";
+position:absolute;
+top:0;left:0;
+width:100%;height:100%;
+background:linear-gradient(to bottom, rgba(179,229,252,0.5), rgba(225,245,254,0.5));
+z-index:-1;
+}
+.page{
+position:absolute;width:100%;height:100%;
+top:0;left:0;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+text-align:center;
+opacity:0;transition:opacity 0.8s ease;
+padding:20px;
+}
+.page.active{opacity:1;z-index:10;}
+h1{font-size:2em;margin-bottom:10px;}
+p{font-size:1.1em;line-height:1.7;}
+button{
+margin-top:25px;
+padding:15px 35px;
+border:none;border-radius:15px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(12px);
+color:#0288d1;font-size:1em;cursor:pointer;
+box-shadow:0 8px 32px 0 rgba(31, 38, 135, 0.15);
+transition:all 0.3s ease;
+border:1px solid rgba(255,255,255,0.18);
+}
+button:hover{background:rgba(255,255,255,0.35);transform:scale(1.05);}
+.wave{
+position:absolute;bottom:0;left:0;width:200%;height:180px;
+background:url('https://i.ibb.co/TrxCp4B/wave-bg.png') repeat-x;
+background-size:cover;
+animation:wave 12s linear infinite;
+opacity:0.6;
+}
+@keyframes wave{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+#page5{overflow-y:auto;justify-content:flex-start;padding-top:60px;padding-bottom:100px;max-height:100vh;}
+.poem-title{font-size:1.8em;font-weight:600;margin-bottom:25px;color:#0288d1;}
+.poem-box{
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(15px);
+border-radius:18px;
+padding:30px;margin-bottom:30px;
+box-shadow:0 8px 32px 0 rgba(31,38,135,0.15);
+max-width:600px;
+border:1px solid rgba(255,255,255,0.18);
+}
+.signature{font-size:0.9em;color:#0288d1;margin-bottom:40px;opacity:0.85;}
+audio{display:none;}
+.sand { position: absolute; bottom: 0; left: 0; width: 100%; height: 60px; background: linear-gradient(to top, #f2e6d9, transparent); z-index: 1; }
+.starfish, .shell { position: absolute; z-index: 2; font-size: 24px; opacity: 0.8; animation: float 4s ease-in-out infinite; }
+.starfish1 { bottom: 30px; left: 15%; animation-delay: 0s; }
+.starfish2 { bottom: 40px; left: 40%; animation-delay: 1s; }
+.starfish3 { bottom: 25px; left: 70%; animation-delay: 2s; }
+.shell1 { bottom: 20px; left: 25%; animation-delay: 0.5s; }
+.shell2 { bottom: 35px; left: 55%; animation-delay: 1.5s; }
+.shell3 { bottom: 15px; left: 85%; animation-delay: 2.5s; }
+@keyframes float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-10px) rotate(10deg); } }
+</style>
+</head>
+<body>
+<div class="page active" id="page0">
+<h1>Welcome to Rasyad page</h1>
+<button id="btnWelcome">Lanjut</button>
+</div>
+<div class="page" id="page1">
+<h1>Play musicnya dulu ya maniess</h1>
+<button id="btnPlay">▶️ Play Music & Lanjut</button>
+</div>
+<div class="page" id="page2">
+<h1>Hai nona Asya,</h1>
+<p>Bagaimana perasaanmu hari ini?</p>
+<button id="btnHappy">Seneng bangett 😆</button>
+</div>
+<div class="page" id="page3">
+<h1>Ohh pantes, kamu kan makin cakep kalo lagi seneng 💙</h1>
+<button id="btnCompliment">❤️</button>
+</div>
+<div class="page" id="page4">
+<h1>Sesuai janjiku,</h1>
+<p>Ini puisi buatmu, silakan dibaca yaa 💙</p>
+<button id="btnPoem">Lihat Puisi</button>
+</div>
+<div class="page" id="page5">
+<div class="poem-title">Ingin kenalmu lebih dekat</div>
+<div class="poem-box">
+<p>
+Kenapa dia datang begitu cepat?<br>
+Hembusan angin laut pun tidak kuat menahan<br>
+Apa ku kala itu ingat?<br>
+Ketika gadis itu menyapa di awal perjumpaan<br><br>
+Aku dan dia memang berbeda<br>
+Layaknya puncak gunung dengan pantai<br>
+Tapi selalu entah kenapa<br>
+Ada suatu yang ingin kurangkai<br><br>
+Apakah gadis itu mengerti?<br>
+Tentang apa yang ku inginkan<br>
+Dan apa dia mengerti?<br>
+Tentang apa yang dia lakukan<br><br>
+Sungguh, aku merasa mustahil<br>
+Bisakah kita saling memahami?<br>
+Aku bukan ingin mencintaimu dengan sederhana<br>
+Apalagi membiarkan perasaanku terserap oleh akar pohon<br><br>
+Layaknya kedamaian di lautan,<br>
+Aku hanya ingin mengenalmu tanpa batas
+</p>
+</div>
+<div class="signature">Puisi by Rasyad for Asya</div>
+<button id="btnAfterPoem">Lanjut</button>
+</div>
+<div class="wave"></div>
+<div class="sand"></div>
+<div class="starfish starfish1">⭐</div>
+<div class="starfish starfish2">⭐</div>
+<div class="starfish starfish3">⭐</div>
+<div class="shell shell1">🐚</div>
+<div class="shell shell2">🐚</div>
+<div class="shell shell3">🐚</div>
+
+<!-- Audio -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="bimbang.mp3" type="audio/mpeg">
+</audio>
+<audio id="bgMusic2" loop preload="auto">
+  <source src="k.mp3" type="audio/mpeg">
+</audio>
+<audio id="bgMusic3" loop preload="auto">
+  <source src="kita-usahakan-rumah-itu.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const pages = [page0,page1,page2,page3,page4,page5];
+const music = document.getElementById('bgMusic');
+const music2 = document.getElementById('bgMusic2');
+const music3 = document.getElementById('bgMusic3');
+function showPage(i){pages.forEach(p=>p.classList.remove('active'));pages[i].classList.add('active');}
+function stopAllMusic(){[music,music2,music3].forEach(a=>{a.pause();a.currentTime=0;});}
+btnWelcome.addEventListener('click',()=>showPage(1));
+btnPlay.addEventListener('click',()=>{stopAllMusic();music.play();showPage(2);});
+btnHappy.addEventListener('click',()=>showPage(3));
+btnCompliment.addEventListener('click',()=>showPage(4));
+btnPoem.addEventListener('click',()=>{stopAllMusic();music2.play();showPage(5);});
+btnAfterPoem.addEventListener('click',()=>{stopAllMusic();music3.play();alert("🎵 Tamat!");});
+</script>
+</body>
+</html>
